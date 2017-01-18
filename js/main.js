@@ -40,7 +40,7 @@ $(document).ready(function(){
 		var curr_scroll = $(window).scrollTop();
 		if (curr_scroll > 20) {
 			$("#header-carousel .item .container").css("opacity", 1 - (curr_scroll/100 * 0.4));
-			$(".subpage .subpage-title").css("opacity", 1 - (curr_scroll/100 * 0.7));
+			$(".subpage .subpage-title").css("opacity", 1 - (curr_scroll/100 * 0.));
 		} else {
 			$("#header-carousel .item .container").css("opacity", 1);
 			$(".subpage .subpage-title").css("opacity", 1);
@@ -66,5 +66,19 @@ $(document).ready(function(){
 		}
 	  });
 	});
+	
+	$(".solution-content, .subpage-prod-content").click(function(){
+		var tget = $(this).attr("data-target");
+		if (tget === "Consumers") {
+			window.location.href= "http://www.jumpnet.com";
+		} else {
+			//console.log(tget);
+			var curr_url = window.location.href.toString();
+			//console.log(curr_url);
+			var new_url = curr_url.substring(0, curr_url.lastIndexOf("/") + 1) + tget + ".html";
+			console.log(new_url);
+			window.location.href = new_url;
+		}
+	})
 
 });
