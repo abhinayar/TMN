@@ -748,12 +748,10 @@ Solutions
 		max-width: 320px;
 		margin: 0 auto;
 		padding: 20px;
-		transition: all 0.15s ease;
 	}
 
 	.solution-content:hover {
 		background: #f5f5f5;
-		transition: all 0.15s ease;
 	}
 
 	.solution-icon {
@@ -908,7 +906,7 @@ Products
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-image: url(../img/platform/bg.jpg);
+		background-image: url(../img/platform/bg_small.jpg);
 		padding-top: 45px;
 		padding-bottom: 60px;
 	}
@@ -1383,12 +1381,10 @@ Contact
 		color: #077cab;
 		font-weight: 700;
 		font-size: 22px;
-		transition: all 0.12s ease;
 	}
 	
 	.contact-option:hover .contact-name h2 {
 		color: #001e60;
-		transition: all 0.12s ease;
 	}
 	
 	.contact-info, .contact-info a {

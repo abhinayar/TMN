@@ -36,17 +36,35 @@ $(document).ready(function(){
 	//var rellax = new Rellax('.par');
 	
 	/* Fade Carousel Content On Scroll */
-	function fadeCarousel() {
+	function fadeHeader() {
 		var curr_scroll = $(window).scrollTop();
 		if (curr_scroll > 20) {
 			$("#header-carousel .item .container").css("opacity", 1 - (curr_scroll/100 * 0.4));
+			$(".subpage .subpage-title").css("opacity", 1 - (curr_scroll/100 * 0.7));
 		} else {
 			$("#header-carousel .item .container").css("opacity", 1);
+			$(".subpage .subpage-title").css("opacity", 1);
 		}
 	}
-	fadeCarousel();
+	fadeHeader();
 	$(window).scroll(function(){
-		fadeCarousel();
-	})
+		fadeHeader();
+	});
+	
+	/* Smooth Scroll */
+	$(function() {
+		$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html, body').animate({
+			  scrollTop: target.offset().top - 80
+			}, 600);
+			return false;
+		  }
+		}
+	  });
+	});
 
 });
