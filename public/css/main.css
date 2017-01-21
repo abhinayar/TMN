@@ -952,6 +952,12 @@ Products
 	.jumpnet-logo-row .svg-wrapper {
 		max-width: 50%;
 		margin: 0 auto;
+		text-align: center;
+	}
+	
+	.jumpnet-logo-row .svg-wrapper svg {
+		max-width: 95%;
+		margin: 0 auto;
 	}
 	
 	.platform.title-wrapper {
