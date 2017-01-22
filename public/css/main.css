@@ -142,6 +142,7 @@ a.fill-button, button.fill-button {
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
+	-webkit-transition:all 150ms ease;
 	transition: all 150ms ease;
 	position: relative;
 	overflow: hidden;
@@ -159,6 +160,7 @@ a.fill-button:after, button.fill-button:after {
 	display: block;
 	top: 64px;
 	left: -2px;
+	-webkit-transition:all 150ms ease;
 	transition: all 150ms ease;
 	z-index: -1;
 }
@@ -166,10 +168,12 @@ a.fill-button:after, button.fill-button:after {
 a.fill-button:hover, button.fill-button:hover {
 	border-color: #077cab;
 	color: #fff;
+	-webkit-transition:all 150ms ease;
 	transition: all 150ms ease;
 }
 
 a.fill-button:hover:after, button.fill-button:hover:after {
+	-webkit-transition:all 150ms ease;
 	transition: all 150ms ease;
 	top: -2px;
 }
@@ -189,6 +193,7 @@ NAV
 		position: fixed;
 		z-index: 997;
 		border-bottom: 1px solid #eee;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
@@ -198,6 +203,7 @@ NAV
 
 	nav.full {
 		height: 100px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 
@@ -212,6 +218,7 @@ NAV
 		border-right: 1px solid #eee;
 		display: inline-block;
 		text-align: center;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 		max-width: 70%;
 	}
@@ -220,17 +227,20 @@ NAV
 		padding-top: 34px;
 		width: 280px;
 		max-width: 50%;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 		max-width: 70%;
 	}
 
 	.logo-wrapper svg {
 		max-width: 280px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
 	nav.full .logo-wrapper svg {
 		max-width: 320px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 
@@ -252,11 +262,13 @@ NAV
 		color: #999;
 		cursor: pointer;
 		border-left: 1px solid transparent;
+		-webkit-transition:all 0.3s ease;
 		transition: all 0.3s ease;
 	}
 
 	.mobile-nav-wrapper.active {
 		color: #077cab;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -313,6 +325,7 @@ NAV
 		display: inline-block;
 		border-bottom: 0;
 		height: 100%;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
 		border-top: none;
 	}
@@ -327,6 +340,7 @@ NAV
 	
 	.nav-list .nav-item {
 		padding: 10px;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
 	}
 	
@@ -366,6 +380,7 @@ NAV
 		//border-bottom: 3px solid #ddd;
 		height: 0;
 		overflow: hidden;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
 	}
 	
@@ -376,6 +391,7 @@ NAV
 	
 	.nav-list .nav-item.dropdown:hover .dropdown {
 		border-bottom: 3px solid #ddd;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
 	}
 	
@@ -390,6 +406,7 @@ NAV
 	nav.full .nav-list .nav-item .dropdown {
 		top: 98px;
 		left: -12px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
@@ -400,12 +417,14 @@ NAV
 		color: #333;
 		padding-top: 22px;
 		border-bottom: 1px solid #eee;
+		-webkit-transition:all 0.05s ease;
 		transition: all 0.05s ease
 	}
 	
 	.nav-list .nav-item .dropdown a:hover {
 		color: #333;
 		background: #f0f0f0;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -428,6 +447,7 @@ NAV
 		padding-left: 12px;
 		padding-right: 12px;
 		position: relative;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
 	}
 	
@@ -461,12 +481,14 @@ NAV
 		padding-top: 28px;
 		padding-left: 10px;
 		border-left: 1px solid #eee;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
 	nav.full .nav-list .right {
 		height: 100px;
 		padding-top: 38px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
@@ -478,11 +500,13 @@ NAV
 	
 	.nav-list .right .right-item a {
 		color: #001e60;
+		-webkit-transition:0.12s ease all;
 		transition: 0.12s ease all;
 	}
 	
 	.nav-list .right .right-item a:hover {
 		color: #077cab;
+		-webkit-transition:0.12s ease all;
 		transition: 0.12s ease all;
 	}
 }
@@ -571,6 +595,7 @@ Header Carousel
 		background-image: none;
 		width: 50px;
 		opacity: 0.1;
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 		text-shadow: none;
 	}
@@ -590,7 +615,8 @@ Header Carousel
 		height: 30px;
 		top: 255px;
 		left: -210px;
-		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		        transform: rotate(90deg);
 	}
 
 	.carousel-indicators {
@@ -606,8 +632,6 @@ Header Carousel
 	.carousel-indicators li {
 		background: transparent;
 		border: 2px solid #fff;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
 		border-radius: 50%;
 		width: 10px;
 		height: 10px;
@@ -616,11 +640,13 @@ Header Carousel
 		text-decoration: none;
 		display: inline-block;
 		vertical-align: middle;
+		-webkit-transition:all 100ms ease;
 		transition: all 100ms ease;
 	}
 
 	.carousel-indicators li:hover {
 		background: #fff;
+		-webkit-transition:all 100ms ease;
 		transition: all 100ms ease;
 	}
 
@@ -633,6 +659,7 @@ Header Carousel
 		cursor: pointer;
 		margin: 0 14px;
 		position: relative;
+		-webkit-transition:all 200ms ease;
 		transition: all 200ms ease;
 	}
 }
@@ -773,22 +800,26 @@ Solutions
 		text-align: center;
 		padding-top: 29px;
 		margin: 0 auto;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-icon svg {
 		max-height: 80px;
 		fill: #077cab;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-content:hover .solution-icon {
 		border-color: rgba(0,30,96,0.4);
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-content:hover .solution-icon svg {
 		fill: #001e60;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -797,6 +828,7 @@ Solutions
 		font-weight: 700;
 		color: #077cab;
 		font-size: 22px;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -806,11 +838,13 @@ Solutions
 		margin-bottom: 15px;
 		height: 5px;
 		background: rgba(7,124,171,0.4);
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-content:hover .solution-hr {
 		background: rgba(0,30,96,0.4);
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -828,11 +862,13 @@ Solutions
 		font-weight: 700;
 		color: #077cab;
 		text-decoration: none;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-content:hover a, .solution-content:hover h2 {
 		color: #001e60;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -1109,6 +1145,11 @@ Products
 	
 	.module-desc {
 		font-size: 18px;
+	}
+	
+	.vis .module-desc p {
+		width: 110%;
+		margin-left: -5%;
 	}
 	
 	.module-desc a {
@@ -1489,11 +1530,13 @@ Footer
 		color: #6d6c6f;
 		text-decoration: none;
 		font-size: 16px;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
 	.footer-item a:hover {
 		color: #077cab;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1596,11 +1639,11 @@ Footer
 		text-align: center;
 	}
 	
-	.subpage.devs .subpage-title, .subpage.mno .subpage-title {
+	.subpage.devs .subpage-title, .subpage.mno .subpage-title, .subpage.mvno .subpage-title {
 		padding: 20px;
 	}
 	
-	.subpage.devs .subpage-title h2, .subpage.mno .subpage-title h2 {
+	.subpage.devs .subpage-title h2, .subpage.mno .subpage-title h2, .subpage.mvno .subpage-title h2 {
 		font-size: 28px;
 	}
 	
@@ -1691,6 +1734,7 @@ Footer
 		margin: 0 auto;
 		color: #077cab;
 		cursor: pointer;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1702,6 +1746,7 @@ Footer
 	.subpage-prod-content:hover {
 		background: #eee;
 		color: #001e60;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1734,6 +1779,7 @@ Footer
 		margin-top: 5px;
 		text-decoration: none;
 		color: #077cab;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1754,6 +1800,7 @@ Footer
 		text-align: center;
 		text-transform: uppercase;
 		text-decoration: none;
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 		position: relative;
 		overflow: hidden;
@@ -1770,6 +1817,7 @@ Footer
 		display: block;
 		top: 64px;
 		left: -2px;
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 		z-index: -1;
 	}
@@ -1777,16 +1825,19 @@ Footer
 	.subpage-tech-info p a:hover {
 		border-color: #077cab;
 		color: #fff;
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 	}
 
 	.subpage-tech-info p a:hover:after {
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 		top: -2px;
 	}
 	
 	.subpage-prod-content:hover a {
 		color: #001e60;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1867,6 +1918,9 @@ Footer
 		padding-top: 56px;
 	} .subpage.mno .subpage-title h2 {
 		font-size: 52px;
+	} .subpage.mvno .subpage-title h2 {
+		padding-top: 32px;
+		font-size: 46px;
 	}
 
 	#subpage-intro {
@@ -2052,6 +2106,10 @@ Footer
 
 	#subpage-intro .subpage-icon svg {
 		max-height: 100px;
+	}
+	
+	.subpage.mvno .subpage-title h2 {
+		padding-top: 52px;
 	}
 
 	.subpage-intro-text p {
@@ -2338,10 +2396,12 @@ Technology
 		right: 15px;
 		text-align: center;
 		font-size: 28px;
+		-webkit-transition:0.2s ease all;
 		transition: 0.2s ease all;
 		cursor: pointer;
 	} .back-to-top:hover {
 		background: rgba(0,30,96,0.5);
+		-webkit-transition:0.2s ease all;
 		transition: 0.2s ease all;
 	}
 	
@@ -2502,5 +2562,71 @@ Technology
 	}
 }
 
+@media (min-width: 0px) {
+	.errorPage header {
+		height: 100%;
+		min-height: 100vh;
+		background: #001e60;
+	}
+	
+	.error-block {
+		max-width: 90%;
+		width: 720px;
+		margin: 0 auto;
+		color: #fff;
+		text-align: center;
+		font-size: 21px;
+		padding-top: 250px;
+	}
+	
+	.error-logo {
+		margin-bottom: 45px;
+	}
+	
+	.error-logo svg {
+		fill: #fff;
+	} .error-logo svg #TMN_dots {
+		fill: #077cab;
+	}
+	
+	.errorPage h1 {
+		font-size: 42px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	
+	.errorPage p {
+		line-height: 1.5em;
+	}
+	
+	.errorPage p a {
+		font-weight: 700;
+		color: #077cab;
+	}
+	
+	.errorPage .back {
+		position: absolute;
+		z-index: 999;
+		left: 30px;
+		top: 60px;
+		font-size: 21px;
+		height: 50px;
+		width: 150px;
+		padding-top: 13px;
+		background: rgba(7,124,171,0.4);
+		text-align: center;
+	}
+	
+	.errorPage .back:hover {
+		background: #077cab;
+	}
+	
+	.errorPage .back a {
+		color: #fff;
+		text-decoration: none;
+	} .errorPage .back a i {
+		font-size: 16px;
+	}
+}
 
 

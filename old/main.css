@@ -1,30 +1,7 @@
-/* 
-Trinity Mobile Networks CSS File
-Author: Abhi Nayar for SemiErect
-Copyright 2017, All Rights Reserved
-Please contact author for use permissions.
-anayar2[at]gmail[dot]com
-*/
-
-/* 
-Typography:
-Source Sans Pro
-*/
-
-/* 
-Colors:
-L Blue: #077cab;
-M Blue: rgb(0,75,135);
-D Blue: #001e60;
-White: #fff;
-Off White; #f0f0f0;
-Dark: #191919;
-Opacities: 40,60,80,100.
-*/
-
 /**********************
 CLARK CSS RESET
 **********************/
+/* Richard Clark CSS Reset */
 /* 
 Author: Richard Clark - http://richclarkdesign.com 
 Twitter: @rich_clark
@@ -150,6 +127,61 @@ body {
 	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
+a.fill-button, button.fill-button {
+	display: inline-block;
+	color: #077cab;
+	font-weight: bold !important;
+	background: transparent;
+	width: 130px;
+	height: 44px;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.025em;
+	padding-top: 6px;
+	border: 2px solid #077cab;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition:all 150ms ease;
+	transition: all 150ms ease;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-radius: 0;
+	margin-top: 20px;
+}
+
+a.fill-button:after, button.fill-button:after {
+	content: '';
+	width: 195px;
+	height: 68px;
+	background: #077cab;
+	position: absolute;
+	display: block;
+	top: 64px;
+	left: -2px;
+	-webkit-transition:all 150ms ease;
+	transition: all 150ms ease;
+	z-index: -1;
+}
+
+a.fill-button:hover, button.fill-button:hover {
+	border-color: #077cab;
+	color: #fff;
+	-webkit-transition:all 150ms ease;
+	transition: all 150ms ease;
+}
+
+a.fill-button:hover:after, button.fill-button:hover:after {
+	-webkit-transition:all 150ms ease;
+	transition: all 150ms ease;
+	top: -2px;
+}
+
+.st0{fill:#E5554F;}
+.st1{fill:#EB807B;}
+.st2{fill:#FFFFFF;}
+
 /**********************
 NAV
 **********************/
@@ -161,6 +193,7 @@ NAV
 		position: fixed;
 		z-index: 997;
 		border-bottom: 1px solid #eee;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
@@ -170,6 +203,7 @@ NAV
 
 	nav.full {
 		height: 100px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 
@@ -184,22 +218,29 @@ NAV
 		border-right: 1px solid #eee;
 		display: inline-block;
 		text-align: center;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
+		max-width: 70%;
 	}
 
 	nav.full .logo-wrapper {
 		padding-top: 34px;
 		width: 280px;
+		max-width: 50%;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
+		max-width: 70%;
 	}
 
 	.logo-wrapper svg {
 		max-width: 280px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
 	nav.full .logo-wrapper svg {
 		max-width: 320px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 
@@ -221,11 +262,13 @@ NAV
 		color: #999;
 		cursor: pointer;
 		border-left: 1px solid transparent;
+		-webkit-transition:all 0.3s ease;
 		transition: all 0.3s ease;
 	}
 
 	.mobile-nav-wrapper.active {
 		color: #077cab;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -238,6 +281,7 @@ NAV
 		width: 100%;
 		background: #fff;
 		border-bottom: 3px solid #077cab;
+		border-top: 1px solid #eee;
 	}
 
 	.nav-list .nav-item {
@@ -281,7 +325,9 @@ NAV
 		display: inline-block;
 		border-bottom: 0;
 		height: 100%;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
+		border-top: none;
 	}
 	
 	.nav-list {
@@ -294,6 +340,7 @@ NAV
 	
 	.nav-list .nav-item {
 		padding: 10px;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
 	}
 	
@@ -309,18 +356,16 @@ NAV
 		color: #077cab;
 	}
 	
-	.nav-item a {
-		height: 100%;
+	.nav-item>a {
+		height: auto;
 		padding-top: 9px;
 		padding-top: 22px;
-		transition: all 0.2s ease;
 		font-size: 16px;
 	}
 	
-	nav.full .nav-item a {
+	nav.full .nav-item>a {
 		padding-top: 20px;
 		padding-top: 34px;
-		transition: all 0.2s ease;
 	}
 	
 	.nav-list .nav-item .dropdown {
@@ -335,6 +380,7 @@ NAV
 		//border-bottom: 3px solid #ddd;
 		height: 0;
 		overflow: hidden;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
 	}
 	
@@ -345,6 +391,7 @@ NAV
 	
 	.nav-list .nav-item.dropdown:hover .dropdown {
 		border-bottom: 3px solid #ddd;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
 	}
 	
@@ -359,6 +406,7 @@ NAV
 	nav.full .nav-list .nav-item .dropdown {
 		top: 98px;
 		left: -12px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
@@ -369,13 +417,28 @@ NAV
 		color: #333;
 		padding-top: 22px;
 		border-bottom: 1px solid #eee;
+		-webkit-transition:all 0.05s ease;
 		transition: all 0.05s ease
 	}
 	
 	.nav-list .nav-item .dropdown a:hover {
 		color: #333;
 		background: #f0f0f0;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
+	}
+	
+	.subpage .nav-list .nav-item.dropdown:nth-of-type(1)>a, .technology .nav-item.active>a {
+		color: #077cab;
+		padding-bottom: 2px;
+		border-bottom: 2px solid #077cab;
+	} .subpage.pro .nav-list .nav-item.dropdown:nth-of-type(1)>a, .subpage.technology .nav-list .nav-item.dropdown:nth-of-type(1)>a{
+		color: #333;
+		border-bottom: none;
+	} .subpage.pro .nav-list .nav-item.dropdown:nth-of-type(2)>a {
+		color: #077cab;
+		padding-bottom: 2px;
+		border-bottom: 2px solid #077cab;
 	}
 }
 
@@ -384,6 +447,7 @@ NAV
 		padding-left: 12px;
 		padding-right: 12px;
 		position: relative;
+		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
 	}
 	
@@ -417,12 +481,14 @@ NAV
 		padding-top: 28px;
 		padding-left: 10px;
 		border-left: 1px solid #eee;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
 	nav.full .nav-list .right {
 		height: 100px;
 		padding-top: 38px;
+		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
@@ -434,11 +500,13 @@ NAV
 	
 	.nav-list .right .right-item a {
 		color: #001e60;
+		-webkit-transition:0.12s ease all;
 		transition: 0.12s ease all;
 	}
 	
 	.nav-list .right .right-item a:hover {
 		color: #077cab;
+		-webkit-transition:0.12s ease all;
 		transition: 0.12s ease all;
 	}
 }
@@ -466,32 +534,33 @@ Header Carousel
 	}
 
 	#header-carousel .item {
-		height: 280px;
+		height: 240px;
 		background-size: cover;
-		background-position: center center;
+		background-position: center -60px;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
+		overflow: scroll;
 	}
 	
 	#header-carousel .item .container {
-		height: 280px;
+		height: 240px;
 		position: relative;
 		padding-right: 30px;
 		padding-left: 30px;
 	}
 
 	#header-carousel .item.slide1 {
-		background-image: url(../img/index/carousel/slide0.jpg);
-	} #header-carousel .item.slide2 {
 		background-image: url(../img/index/carousel/slide1.jpg);
-	} #header-carousel .item.slide3 {
+	} #header-carousel .item.slide2 {
 		background-image: url(../img/index/carousel/slide2.jpg);
-	} #header-carousel .item.slide4 {
+	} #header-carousel .item.slide3 {
 		background-image: url(../img/index/carousel/slide3.jpg);
-	} #header-carousel .item.slide5 {
+	} #header-carousel .item.slide4 {
 		background-image: url(../img/index/carousel/slide4.jpg);
-	} #header-carousel .item.slide6 {
+	} #header-carousel .item.slide5 {
 		background-image: url(../img/index/carousel/slide5.jpg);
+	} #header-carousel .item.slide6 {
+		background-image: url(../img/index/carousel/slide6.jpg);
 	}
 
 	.slide-title {
@@ -506,67 +575,18 @@ Header Carousel
 
 	.slide-desc {
 		color: #eee;
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: 400;
 		text-align: center;
 		line-height: 1.5em;
 		margin: 0 auto;
 		margin-bottom: 20px;
+		width: 100%;
+		max-width: 330px;
 	}
 	
 	.slide2 .slide-desc {
 		width: 80%;
-	}
-
-	.slide-button {
-		width: 100%;
-		text-align: center;
-	}
-
-	.slide-button a {
-		display: inline-block;
-		color: #077cab;
-		font-weight: bold !important;
-		background: transparent;
-		width: 130px;
-		height: 44px;
-		font-size: 16px;
-		font-weight: 400;
-		letter-spacing: 0.025em;
-		padding-top: 12px;
-		border: 2px solid #077cab;
-		text-align: center;
-		text-transform: uppercase;
-		text-decoration: none;
-		transition: all 150ms ease;
-		position: relative;
-		overflow: hidden;
-		z-index: 1;
-		border-radius: 0;
-	}
-
-	.slide-button a:after {
-		content: '';
-		width: 195px;
-		height: 68px;
-		background: #077cab;
-		position: absolute;
-		display: block;
-		top: 64px;
-		left: -2px;
-		transition: all 150ms ease;
-		z-index: -1;
-	}
-
-	.slide-button a:hover {
-		border-color: #077cab;
-		color: #fff;
-		transition: all 150ms ease;
-	}
-
-	.slide-button a:hover:after {
-		transition: all 150ms ease;
-		top: -2px;
 	}
 
 	.carousel-control.right {
@@ -575,6 +595,7 @@ Header Carousel
 		background-image: none;
 		width: 50px;
 		opacity: 0.1;
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 		text-shadow: none;
 	}
@@ -584,7 +605,7 @@ Header Carousel
 	}
 
 	.carousel-control.right span {
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 
 	.indicator-container {
@@ -594,7 +615,8 @@ Header Carousel
 		height: 30px;
 		top: 255px;
 		left: -210px;
-		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		        transform: rotate(90deg);
 	}
 
 	.carousel-indicators {
@@ -610,8 +632,6 @@ Header Carousel
 	.carousel-indicators li {
 		background: transparent;
 		border: 2px solid #fff;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
 		border-radius: 50%;
 		width: 10px;
 		height: 10px;
@@ -620,11 +640,13 @@ Header Carousel
 		text-decoration: none;
 		display: inline-block;
 		vertical-align: middle;
+		-webkit-transition:all 100ms ease;
 		transition: all 100ms ease;
 	}
 
 	.carousel-indicators li:hover {
 		background: #fff;
+		-webkit-transition:all 100ms ease;
 		transition: all 100ms ease;
 	}
 
@@ -637,6 +659,7 @@ Header Carousel
 		cursor: pointer;
 		margin: 0 14px;
 		position: relative;
+		-webkit-transition:all 200ms ease;
 		transition: all 200ms ease;
 	}
 }
@@ -649,7 +672,7 @@ Header Carousel
 
 @media (min-width: 768px) {
 	#header-carousel .item, #header-carousel .item .container {
-		height: 520px;
+		height: 420px;
 	}
 	
 	#header-carousel .item .container {
@@ -659,31 +682,20 @@ Header Carousel
 	
 	.slide-title {
 		font-size: 64px;
-		margin-top: 60px;
-		margin-bottom: 20px;
+		margin-top: 55px;
+		margin-bottom: 25px;
 	}
 	
 	.slide-desc {
 		font-size: 24px;
 		margin-bottom: 30px;
+		max-width: none;
 	}
-	
-	.slide-button a {
-		width: 200px;
-		height: 60px;
-		font-size: 22px;
-		padding-top: 15px;
-		
-	}
-	
-	.slide-button a:after {
-		width: 200px;
-	}
-	
+
 	.carousel-indicators {
 		display: block;
-		left: 240px;
-		top: 32px;
+		left: 185px;
+		top: 22px;
 	}
 	
 	.carousel-indicators li {
@@ -788,22 +800,26 @@ Solutions
 		text-align: center;
 		padding-top: 29px;
 		margin: 0 auto;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-icon svg {
 		max-height: 80px;
 		fill: #077cab;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-content:hover .solution-icon {
 		border-color: rgba(0,30,96,0.4);
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-content:hover .solution-icon svg {
 		fill: #001e60;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -812,6 +828,7 @@ Solutions
 		font-weight: 700;
 		color: #077cab;
 		font-size: 22px;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -821,11 +838,13 @@ Solutions
 		margin-bottom: 15px;
 		height: 5px;
 		background: rgba(7,124,171,0.4);
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-content:hover .solution-hr {
 		background: rgba(0,30,96,0.4);
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -843,11 +862,13 @@ Solutions
 		font-weight: 700;
 		color: #077cab;
 		text-decoration: none;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
 	.solution-content:hover a, .solution-content:hover h2 {
 		color: #001e60;
+		-webkit-transition:all 0.15s ease;
 		transition: all 0.15s ease;
 	}
 
@@ -918,8 +939,10 @@ Solutions
 		font-size: 18px;
 	}
 	
-	.solution-desc.dev {
+	.solution-desc.dev p {
 		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 10px;
 	}
 }
 
@@ -932,7 +955,7 @@ Products
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-image: url(../img/platform/bg_small.jpg);
+		background-image: url(../img/index/platform/bg.jpg);
 		padding-top: 45px;
 		padding-bottom: 60px;
 	}
@@ -972,6 +995,12 @@ Products
 	
 	.jumpnet-logo-row .svg-wrapper {
 		max-width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	.jumpnet-logo-row .svg-wrapper svg {
+		max-width: 95%;
 		margin: 0 auto;
 	}
 	
@@ -1064,53 +1093,6 @@ Products
 		line-height: 1.5em;
 		margin-top: 14px;
 	}
-	
-	.module-desc a {
-		display: inline-block;
-		color: #077cab;
-		font-weight: bold !important;
-		background: transparent;
-		width: 130px;
-		height: 42px;
-		font-size: 16px;
-		font-weight: 400;
-		letter-spacing: 0.025em;
-		padding-top: 6px;
-		border: 2px solid #077cab;
-		text-align: center;
-		text-transform: uppercase;
-		text-decoration: none;
-		transition: all 150ms ease;
-		position: relative;
-		overflow: hidden;
-		z-index: 1;
-		border-radius: 0;
-		margin-top: 20px;
-	}
-
-	.module-desc a:after {
-		content: '';
-		width: 195px;
-		height: 68px;
-		background: #077cab;
-		position: absolute;
-		display: block;
-		top: 64px;
-		left: -2px;
-		transition: all 150ms ease;
-		z-index: -1;
-	}
-
-	.module-desc a:hover {
-		border-color: #077cab;
-		color: #fff;
-		transition: all 150ms ease;
-	}
-
-	.module-desc a:hover:after {
-		transition: all 150ms ease;
-		top: -2px;
-	}
 }
 
 @media (min-width: 768px) {
@@ -1163,6 +1145,11 @@ Products
 	
 	.module-desc {
 		font-size: 18px;
+	}
+	
+	.vis .module-desc p {
+		width: 110%;
+		margin-left: -5%;
 	}
 	
 	.module-desc a {
@@ -1249,7 +1236,7 @@ Products
 About & Partners
 **********************/
 @media (min-width: 0px) {
-	./index.html#about {
+	#about {
 		background: #077cab;
 		color: #fff;
 		padding-top: 45px;
@@ -1299,7 +1286,7 @@ About & Partners
 }
 
 @media (min-width: 768px) {
-	./index.html#about {
+	#about {
 		padding-top: 45px;
 		padding-bottom: 30px;
 	}
@@ -1323,7 +1310,7 @@ About & Partners
 }
 
 @media (min-width: 992px) {
-	./index.html#about {
+	#about {
 		padding-top: 45px;
 	}
 	
@@ -1345,7 +1332,7 @@ About & Partners
 Contact
 **********************/
 @media (min-width: 0px) {
-	./index.html#contact {
+	#contact {
 		background: #fff;
 		padding-top: 45px;
 		padding-bottom: 60px;
@@ -1373,60 +1360,54 @@ Contact
 	}
 	
 	.contact-options {
-		text-align: center;
-		margin-top: 15px;
+		margin-top: 30px;
 	}
 	
-	.contact-option {
-		width: 260px;
+	.contact-form {
+		width: 420px;
+		max-width: 100%;
 		margin: 0 auto;
-		padding: 20px;
-		transition: all 0.12s ease;
-		cursor: pointer;
 	}
 	
-	.contact-option:hover {
-		background: #f5f5f5;
-		transition: all 0.12s ease;
-	}
-	
-	.contact-option .contact-icon {
-		font-size: 32px;
-		color: #077cab;
-		opacity: 1;
-		transition: all 0.12s ease;
-	}
-	
-	.contact-option:hover .contact-icon {
-		color: #001e60;
-		transition: all 0.12s ease;
-	}
-	
-	.contact-option .contact-name h2 {
-		padding: 15px 0;
-		color: #077cab;
-		font-weight: 700;
-		font-size: 22px;
-	}
-	
-	.contact-option:hover .contact-name h2 {
-		color: #001e60;
-	}
-	
-	.contact-info, .contact-info a {
+	#contact-form input, #contact-form textarea {
+		max-width: 100%;
+		width: 380px;
+		border: none;
+		background: #fafafa;
+		border-radius: 0;
+		height: 50px;
 		font-size: 16px;
 		color: #555;
-		text-decoration: none;
 	}
 	
-	.contact-info span {
-		display: block;
-		line-height: 1.5em;
+	#contact-form textarea {
+		height: 120px;
+		max-height: 180px;
+		overflow-y: scroll;
+	}
+	
+	#contact-form button {
+		max-width: 100%;
+		width: 380px;
+		height: 52px;
+		border-radius: 0;
+		color: #077cab;
+		font-size: 16px;
+		margin-top: 0;
+		float: left;
+	}
+	
+	#contact-form button:after {
+		width: 105%;
+	}
+	
+	#contact-form button:hover {
+		color: #fff;
 	}
 }
 
 @media (min-width: 768px) {
-	./index.html#contact {
+	#contact {
 		padding-top: 60px;
 		padding-bottom: 60px;
 		border-bottom: 10px solid #077cab;
@@ -1435,6 +1416,7 @@ Contact
 	.contact .title {
 		font-size: 42px;
 		text-align: left;
+		margin-top: 15px;
 	}
 	
 	.contact .desc {
@@ -1447,39 +1429,67 @@ Contact
 	}
 	
 	.contact-options {
-		margin-top: -15px;
+		margin-top: 0;
 	}
 	
-	.contact-option {
-		width: 100%;
-		padding: 20px;
+	#contact-form .right {
+		padding-left: 6px;
+	} #contact-form .left {
+		padding-right: 6px;
 	}
 	
-	.contact-option .contact-name h2 {
-		padding: 7px 0;
-		font-size: 24px;
+	#contact-form input, #contact-form textarea {
+		height: 47px;
 	}
 	
-	.contact-option:hover {
-		background: none;
+	#contact-form textarea {
+		height: 77px;
+		max-height: 77px;
+		overflow-y: scroll;
 	}
 	
-	.contact-info, .contact-info a {
-		font-size: 18px;
+	#contact-form button {
+		height: 47px;
+		padding-top: 5px;
 	}
 }
 
 @media (min-width: 992px) {
-	./index.html#contact {
+	#contact {
 		padding: 90px 0;	
 	}
 	
 	.contact .title {
 		font-size: 62px;
+		margin-top: 0px;
+		margin-left: 5%;
 	}
 	
-	.contact-options {
-		margin-top: -10px;
+	.contact .desc {
+		margin-top: 15px;
+		max-width: 90%;
+		margin-left: 5%;
+	}
+	
+	#contact-form {
+		margin-top: 22px;
+	}
+	
+	#contact-form input, #contact-form textarea {
+		height: 52px;
+		width: 100%;
+	}
+	
+	#contact-form textarea {
+		height: 100px;
+		max-height: 100px;
+		overflow-y: scroll;
+	}
+	
+	#contact-form button {
+		width: 100%;
+		height: 52px;
+		padding-top: 4px;
 	}
 }
 
@@ -1520,11 +1530,13 @@ Footer
 		color: #6d6c6f;
 		text-decoration: none;
 		font-size: 16px;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
 	.footer-item a:hover {
 		color: #077cab;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1595,11 +1607,11 @@ Footer
 	}	
 	
 	.subpage header.cable {
-		background-image: url(../img/subpage/header./Cable.html.jpg);
+		background-image: url(../img/subpage/header/cable.jpg);
 	} .subpage header.mvno {
-		background-image: url(../img/subpage/header./Mvno.html.jpg);
+		background-image: url(../img/subpage/header/mvno.jpg);
 	} .subpage header.mno {
-		background-image: url(../img/subpage/header./Mno.html.jpg);
+		background-image: url(../img/subpage/header/mno.jpg);
 	} .subpage header.devs {
 		background-image: url(../img/subpage/header/devs.jpg);
 	} .subpage header.iot {
@@ -1627,11 +1639,11 @@ Footer
 		text-align: center;
 	}
 	
-	.subpage.devs .subpage-title {
+	.subpage.devs .subpage-title, .subpage.mno .subpage-title, .subpage.mvno .subpage-title {
 		padding: 20px;
 	}
 	
-	.subpage.devs .subpage-title h2 {
+	.subpage.devs .subpage-title h2, .subpage.mno .subpage-title h2, .subpage.mvno .subpage-title h2 {
 		font-size: 28px;
 	}
 	
@@ -1701,12 +1713,14 @@ Footer
 	}
 	
 	.subpage-tech-icon .svg-wrapper {
-		max-width: 240px;
+		width: 240px;
+		max-width: 95%;
 		margin: 0 auto;
 	}
 	
 	.subpage-tech-icon svg {
 		fill: #fff;
+		max-width: 100%;
 	}
 	
 	.subpage-tech-icon svg .blue {
@@ -1720,6 +1734,7 @@ Footer
 		margin: 0 auto;
 		color: #077cab;
 		cursor: pointer;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1731,6 +1746,7 @@ Footer
 	.subpage-prod-content:hover {
 		background: #eee;
 		color: #001e60;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1763,6 +1779,7 @@ Footer
 		margin-top: 5px;
 		text-decoration: none;
 		color: #077cab;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1783,6 +1800,7 @@ Footer
 		text-align: center;
 		text-transform: uppercase;
 		text-decoration: none;
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 		position: relative;
 		overflow: hidden;
@@ -1799,6 +1817,7 @@ Footer
 		display: block;
 		top: 64px;
 		left: -2px;
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 		z-index: -1;
 	}
@@ -1806,16 +1825,19 @@ Footer
 	.subpage-tech-info p a:hover {
 		border-color: #077cab;
 		color: #fff;
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 	}
 
 	.subpage-tech-info p a:hover:after {
+		-webkit-transition:all 150ms ease;
 		transition: all 150ms ease;
 		top: -2px;
 	}
 	
 	.subpage-prod-content:hover a {
 		color: #001e60;
+		-webkit-transition:all 0.12s ease;
 		transition: all 0.12s ease;
 	}
 	
@@ -1891,9 +1913,14 @@ Footer
 		padding-top: 32px;
 	}
 
-	.subpage.devs .subpage-title h2 {
+	.subpage.devs .subpage-title h2, .subpage.mno .subpage-title h2 {
 		font-size: 42px;
-		padding-top: 52px;
+		padding-top: 56px;
+	} .subpage.mno .subpage-title h2 {
+		font-size: 52px;
+	} .subpage.mvno .subpage-title h2 {
+		padding-top: 32px;
+		font-size: 46px;
 	}
 
 	#subpage-intro {
@@ -2080,6 +2107,10 @@ Footer
 	#subpage-intro .subpage-icon svg {
 		max-height: 100px;
 	}
+	
+	.subpage.mvno .subpage-title h2 {
+		padding-top: 52px;
+	}
 
 	.subpage-intro-text p {
 		text-align: left;
@@ -2232,3 +2263,370 @@ Footer
 	}
 		
 }
+
+/*****************
+Technology 
+*****************/
+@media (min-width: 0px) {
+	.subpage.technology header {
+		background-image: url(../img/subpage/header/technology.jpg);
+	}
+	
+	.technology .subpage-title {
+		padding-top: 12px;
+	}
+	
+	#tech-overview {
+		background: #fff;
+	}
+	
+	.technology svg {
+		fill: #222;
+	} .technology svg .blue {
+		fill: #077cab;
+	}
+	
+	.overview-wrapper {
+		text-align: center;
+		font-size: 16px;
+		padding: 40px;
+		border-bottom: 1px solid rgba(7,124,171,0.4);
+	}
+	
+	.overview-wrapper a {
+		text-decoration: none;
+		display: block;
+	}
+	
+	.overview-wrapper:hover {
+		background: #f0f0f0;
+		cursor: pointer;
+	}
+	
+	.overview-wrapper:first-of-type {
+		border-top: 3px solid #077cab;
+	}
+	.overview-wrapper:last-of-type {
+		border-bottom: 3px solid #077cab;
+	}
+	
+	.overview-icon svg {
+		max-width: 250px;
+		margin: 0 auto;
+	}
+	
+	.overview-title {
+		font-size: 21px;
+		font-weight: 700;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		color: #222;
+	}
+	
+	.overview-desc p {
+		line-height: 1.5em;
+		color: #555;
+	}
+	
+	.overview-desc p a {
+		display: block;
+		margin-top: 7px;
+		font-weight: 700;
+		color: #077cab;
+		text-decoration:  none;
+		display: none;
+	}
+	
+	.overview-desc p a i {
+		font-size: 10px;
+		opacity: 0.4;
+	}
+	
+	.tech-row {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	} .tech-row.off {
+		background: rgba(7,124,171,0.4);
+		color: #eee;
+	} .tech-row.off svg {
+		fill: #001e60;
+	} .tech-row.off svg .blue {
+		fill: #077cab;
+	}
+	
+	.tech-title-wrapper {
+		text-align: center;
+		font-size: 36px;
+		font-weight: 700;
+		color: #333;
+		margin-bottom: 30px;
+		line-height: 1.2em;
+	} .tech-row.off .tech-title-wrapper {
+		color: #001e60;
+	}
+	
+	.tech-icon-wrapper .svg-wrapper {
+		width: 280px;
+		max-width: 95%;
+		margin: 0 auto;
+	}
+	
+	.tech-desc-wrapper {
+		margin-top: 15px;
+	} 
+	
+	.tech-desc-wrapper p {
+		font-size: 16px;
+		line-height: 1.5em;
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	} .tech-row.off .tech-desc-wrapper p {
+		color: #1d1f20;
+	}
+	
+	.back-to-top {
+		position: fixed;
+		z-index: 999;
+		height: 50px;
+		width: 50px;
+		color: #fff;
+		background: rgba(0,30,96,0.15);
+		bottom: 15px;
+		right: 15px;
+		text-align: center;
+		font-size: 28px;
+		-webkit-transition:0.2s ease all;
+		transition: 0.2s ease all;
+		cursor: pointer;
+	} .back-to-top:hover {
+		background: rgba(0,30,96,0.5);
+		-webkit-transition:0.2s ease all;
+		transition: 0.2s ease all;
+	}
+	
+	.back-to-top a {
+		text-decoration: none;
+		color: #fff;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		padding-top: 9px;
+	}
+	
+	.back-to-top a i {
+		color: #fff;
+	}
+}
+
+@media (min-width: 455px) {
+	.technology .subpage-title {
+		padding-top: 32px;
+	}
+	
+	.overview-desc p {
+		max-width: 320px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.back-to-top {
+		bottom: 25px;
+		right: 25px;
+	}
+	
+	.subpage.technology header {
+		border-bottom: 5px solid #077cab;
+	}
+	
+	.technology .subpage-title {
+		padding-top: 0;
+		margin-top: -3px;
+	}
+	
+	#tech-overview {
+		border-bottom: 4px solid #077cab;
+	}
+
+	.overview-icon .svg-wrapper svg {
+		max-height: 60px;
+	}
+	
+	.overview-desc {
+		display: none;
+	}
+	
+	.overview-wrapper:first-of-type {
+		border-top: none;
+	} .overview-wrapper:last-of-type {
+		border-bottom-width: 1px;
+		border-color: rgba(7,124,171,0.4);
+	} .overview-wrapper {
+		border: 1px solid rgba(7,124,171,0.4);
+		border-top: none;
+	} .overview-wrapper.middle {
+		border-left: none;
+		border-right: none;
+	}
+	
+	.tech-row {
+		padding: 75px 20px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		border-bottom: 5px solid #077cab;
+	} .tech-row.off {
+		background: #fefefe;
+	} #OTT {
+		background-image: url(../img/index/carousel/slide5.jpg);
+	} #LinkAggregation {
+		background-image: url(../img/index/carousel/slide1.jpg);
+	} #NetworkMonitoring {
+		background-image: url(../img/subpage/header/exp.jpg);
+	}
+	
+	.tech-title {
+		font-size: 60px;
+		text-align: left;
+		line-height: 1.25em;
+		margin-bottom: 0;
+		margin-top: 0;
+		color: #fff;
+	} #SDN .tech-title {
+		font-size: 42px;
+	} .tech-row.off .tech-title {
+		color: #077cab;
+	}
+	
+	.tech-desc-wrapper {
+		margin-top: 0px;
+	}
+	
+	.tech-desc p {
+		color: #fff;
+		text-align: left;
+		font-size: 18px;
+		width: 100%;
+		background: rgba(7,124,171,0.4);
+		padding: 25px;
+		line-height: 1.7em;
+	} .tech-row.off .tech-desc-wrapper p {
+		background: none;
+		color: #555;
+		padding: 0;
+	}
+	
+	.tech-icon-wrapper .svg-wrapper {
+		width: 100%;
+		max-width: 420px;
+		margin-left: auto;
+		float: left;
+		margin-bottom: 15px;
+	} .tech-icon-wrapper .svg-wrapper svg {
+		width: 100%;
+	} .tech-row .svg-wrapper svg {
+		fill: #fff;
+	} .tech-row.off .svg-wrapper svg {
+		fill: #001e60;
+	} 
+}
+
+@media (min-width: 992px) {
+	.technology .subpage-title {
+		padding-top: 30px;
+		margin-top: 0;
+	}
+	
+	.overview-row, .tech-content {
+		max-width: 970px;
+		margin: 0 auto;
+	}
+	
+	.overview-icon .svg-wrapper svg {
+		max-height: 100px;
+	}
+	
+	.overview-title {
+		font-size: 24px;
+	}
+	
+	.tech-icon-wrapper .svg-wrapper {
+		width: 100%;
+		max-width: 480px;
+	}
+	
+	.tech-desc p {
+		font-size: 21px;
+	}
+}
+
+@media (min-width: 0px) {
+	.errorPage header {
+		height: 100%;
+		min-height: 100vh;
+		background: #001e60;
+	}
+	
+	.error-block {
+		max-width: 90%;
+		width: 720px;
+		margin: 0 auto;
+		color: #fff;
+		text-align: center;
+		font-size: 21px;
+		padding-top: 250px;
+	}
+	
+	.error-logo {
+		margin-bottom: 45px;
+	}
+	
+	.error-logo svg {
+		fill: #fff;
+	} .error-logo svg #TMN_dots {
+		fill: #077cab;
+	}
+	
+	.errorPage h1 {
+		font-size: 42px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	
+	.errorPage p {
+		line-height: 1.5em;
+	}
+	
+	.errorPage p a {
+		font-weight: 700;
+		color: #077cab;
+	}
+	
+	.errorPage .back {
+		position: absolute;
+		z-index: 999;
+		left: 30px;
+		top: 60px;
+		font-size: 21px;
+		height: 50px;
+		width: 150px;
+		padding-top: 13px;
+		background: rgba(7,124,171,0.4);
+		text-align: center;
+	}
+	
+	.errorPage .back:hover {
+		background: #077cab;
+	}
+	
+	.errorPage .back a {
+		color: #fff;
+		text-decoration: none;
+	} .errorPage .back a i {
+		font-size: 16px;
+	}
+}
+
+
