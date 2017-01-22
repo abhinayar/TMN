@@ -2326,6 +2326,37 @@ Technology
 	} .tech-row.off .tech-desc-wrapper p {
 		color: #1d1f20;
 	}
+	
+	.back-to-top {
+		position: fixed;
+		z-index: 999;
+		height: 50px;
+		width: 50px;
+		color: #fff;
+		background: rgba(0,30,96,0.15);
+		bottom: 15px;
+		right: 15px;
+		text-align: center;
+		font-size: 28px;
+		transition: 0.2s ease all;
+		cursor: pointer;
+	} .back-to-top:hover {
+		background: rgba(0,30,96,0.5);
+		transition: 0.2s ease all;
+	}
+	
+	.back-to-top a {
+		text-decoration: none;
+		color: #fff;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		padding-top: 9px;
+	}
+	
+	.back-to-top a i {
+		color: #fff;
+	}
 }
 
 @media (min-width: 455px) {
@@ -2340,6 +2371,11 @@ Technology
 }
 
 @media (min-width: 768px) {
+	.back-to-top {
+		bottom: 25px;
+		right: 25px;
+	}
+	
 	.subpage.technology header {
 		border-bottom: 5px solid #077cab;
 	}
@@ -2465,8 +2501,6 @@ Technology
 		font-size: 21px;
 	}
 }
-
-
 
 
 

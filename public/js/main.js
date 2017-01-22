@@ -89,15 +89,4 @@ $(document).ready(function(){
 			window.location.href = new_url;
 		}
 	});
-	
-	$(".overview-wrapper").click(function() {
-		var target = $(this).attr("data-target");
-		if (target.length) {
-			$('html, body').animate({
-			  scrollTop: target.offset().top - 80
-			}, 600);
-			return false;
-		}
-	  });
-
-});
+});	
