@@ -81,7 +81,7 @@ $(document).ready(function(){
 				subFolder = "Products/"
 			}
 			var curr_url = window.location.href.toString();
-			var new_url = curr_url.substring(0, curr_url.IndexOf("io/") + 1) + subFolder + tget + ".html";
+			var new_url = curr_url.substring(0, curr_url.indexOf("io/") + 1) + subFolder + tget + ".html";
 			console.log(new_url);
 			window.location.href = new_url;
 		}
@@ -89,7 +89,6 @@ $(document).ready(function(){
 	
 	$(".overview-wrapper").click(function() {
 		var target = $(this).attr("data-target");
-		alert(ta)
 		if (target.length) {
 			$('html, body').animate({
 			  scrollTop: target.offset().top - 80
