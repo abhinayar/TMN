@@ -28,7 +28,7 @@ $(document).ready(function(){
 	
 	/* BS Carousel */
 	$('#header-carousel').carousel({
-		interval: 5000,
+		interval: 10000,
 		pause: "hover"
 	});
 	
@@ -76,9 +76,13 @@ $(document).ready(function(){
 			
 			if ($(this).hasClass("solution-content")) {
 				subFolder = "Solutions/"
+			} else if ($(this).hasClass("tech")) {
+				subFolder = "/Technology";
+				tget = "";
 			} else {
 				subFolder = "Products/"
 			}
+			
 			var curr_url = window.location.href.toString();
 			var new_url = curr_url.substring(0, curr_url.indexOf("MN/") + 3) + subFolder + tget + ".html";
 			console.log(new_url);

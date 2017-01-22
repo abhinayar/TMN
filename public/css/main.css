@@ -662,6 +662,7 @@ Header Carousel
 	.slide-desc {
 		font-size: 24px;
 		margin-bottom: 30px;
+		max-width: none;
 	}
 
 	.carousel-indicators {
@@ -902,8 +903,10 @@ Solutions
 		font-size: 18px;
 	}
 	
-	.solution-desc.dev {
+	.solution-desc.dev p {
 		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 10px;
 	}
 }
 
@@ -1593,11 +1596,11 @@ Footer
 		text-align: center;
 	}
 	
-	.subpage.devs .subpage-title {
+	.subpage.devs .subpage-title, .subpage.mno .subpage-title {
 		padding: 20px;
 	}
 	
-	.subpage.devs .subpage-title h2 {
+	.subpage.devs .subpage-title h2, .subpage.mno .subpage-title h2 {
 		font-size: 28px;
 	}
 	
@@ -1667,12 +1670,14 @@ Footer
 	}
 	
 	.subpage-tech-icon .svg-wrapper {
-		max-width: 240px;
+		width: 240px;
+		max-width: 95%;
 		margin: 0 auto;
 	}
 	
 	.subpage-tech-icon svg {
 		fill: #fff;
+		max-width: 100%;
 	}
 	
 	.subpage-tech-icon svg .blue {
@@ -1857,9 +1862,11 @@ Footer
 		padding-top: 32px;
 	}
 
-	.subpage.devs .subpage-title h2 {
+	.subpage.devs .subpage-title h2, .subpage.mno .subpage-title h2 {
 		font-size: 42px;
-		padding-top: 52px;
+		padding-top: 56px;
+	} .subpage.mno .subpage-title h2 {
+		font-size: 52px;
 	}
 
 	#subpage-intro {
