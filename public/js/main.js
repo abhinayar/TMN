@@ -80,7 +80,7 @@ $(document).ready(function(){
 				subFolder = "Products/"
 			}
 			var curr_url = window.location.href.toString();
-			var new_url = curr_url.substring(0, curr_url.indexOf("io/") + 3) + subFolder + tget + ".html";
+			var new_url = curr_url.substring(0, curr_url.indexOf("MN/") + 3) + subFolder + tget + ".html";
 			console.log(new_url);
 			window.location.href = new_url;
 		}
