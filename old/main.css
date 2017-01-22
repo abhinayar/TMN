@@ -332,10 +332,14 @@ NAV
 	
 	.nav-list {
 		padding-left: 10px;
+		padding-left: 0;
+		float: right;
+		margin-right: 15px;
 	}
 	
 	nav.full .nav-list {
 		padding-left: 12px;
+		padding-left: 0;
 	}
 	
 	.nav-list .nav-item {
@@ -358,20 +362,20 @@ NAV
 	
 	.nav-item>a {
 		height: auto;
-		padding-top: 9px;
 		padding-top: 22px;
 		font-size: 16px;
 	}
 	
 	nav.full .nav-item>a {
-		padding-top: 20px;
 		padding-top: 34px;
+		padding-top: 36px;
 	}
 	
 	.nav-list .nav-item .dropdown {
 		display: block;
 		position: absolute;
 		left: -10px;
+		left: -8px;
 		top: 78px;
 		z-index: 998;
 		background: #fff;
@@ -406,6 +410,7 @@ NAV
 	nav.full .nav-list .nav-item .dropdown {
 		top: 98px;
 		left: -12px;
+		left: -8px;
 		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
@@ -466,11 +471,11 @@ NAV
 	
 	.nav-item a {
 		font-size: 18px;
-		padding-top: 21px;
+		padding-top: 22px;
 	}
 	
 	nav.full .nav-item a {
-		padding-top: 33px;
+		padding-top: 35px;
 	}
 	
 	.nav-list .right {
