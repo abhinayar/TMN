@@ -2603,15 +2603,20 @@ Technology
 		color: #fff;
 		text-align: center;
 		font-size: 21px;
-		padding-top: 250px;
+		padding-top: 200px;
 	}
 	
 	.error-logo {
 		margin-bottom: 45px;
 	}
 	
+	.error-logo .svg-wrapper {
+		max-width: 80%;
+	}
+	
 	.error-logo svg {
 		fill: #fff;
+		max-width: 100%;
 	} .error-logo svg #TMN_dots {
 		fill: #077cab;
 	}
