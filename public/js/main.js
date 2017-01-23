@@ -33,8 +33,6 @@ $(document).ready(function(){
 			if($(".mobile-nav-wrapper").hasClass("active")) {
 				$('.nav-list').slideToggle("150");
 				$(".mobile-nav-wrapper").removeClass("active");
-			} else {
-				return false;
 			}
 		});
 	});	

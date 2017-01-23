@@ -292,7 +292,6 @@ NAV
 	}
 
 	.nav-list .nav-item {
-		padding: 22px;
 		border-bottom: 1px solid #eee;
 		text-align: center;
 	}
@@ -306,12 +305,14 @@ NAV
 		cursor: pointer;
 	}
 
-	.nav-list .nav-item a {
+	.nav-item>a {
 		display: inline-block;
 		text-transform: uppercase;
 		font-weight: 700;
 		color: #333;
 		text-decoration: none;
+		width: 100%;
+		padding: 22px;
 	}
 
 	.nav-list .nav-item .dropdown {
@@ -367,9 +368,10 @@ NAV
 	.nav-list .nav-item:hover a {
 		color: #077cab;
 	}
-	
+
 	.nav-item>a {
 		height: auto;
+		padding: 0;
 		padding-top: 22px;
 		font-size: 16px;
 		-webkit-transition:0.2s all ease;
