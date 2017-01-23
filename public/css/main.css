@@ -276,8 +276,15 @@ NAV
 		padding-top: 30px;
 	}
 
+	.nav-list:before {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	
 	.nav-list {
 		display: inline-block;
+		margin-top: 0;
 		width: 100%;
 		background: #fff;
 		border-bottom: 3px solid #077cab;
@@ -331,6 +338,7 @@ NAV
 	}
 	
 	.nav-list {
+		display: inline-block;
 		padding-left: 10px;
 		padding-left: 0;
 		float: right;

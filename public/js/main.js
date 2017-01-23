@@ -27,17 +27,17 @@ $(document).ready(function(){
 			$(".mobile-nav-wrapper").removeClass("active");
 			$(".nav-list .nav-item").addClass("mobile");
 		}
+
+		/* Hide Nav On Mobile Link Select */
+		$(".nav-list .nav-item.mobile a").on("click",function(){
+			if($(".mobile-nav-wrapper").hasClass("active")) {
+				$('.nav-list').slideToggle("150");
+				$(".mobile-nav-wrapper").removeClass("active");
+			} else {
+				return false;
+			}
+		});
 	});	
-	$(".nav-list .nav-item.mobile a").on("click",function(){
-		console.log("aa");
-		alert("ddd");	
-		if($(".mobile-nav-wrapper").hasClass("active")) {
-			$('.nav-list').slideToggle("150");
-			$(".mobile-nav-wrapper").removeClass("active");
-		} else {
-			return false;
-		}
-	});
 	
 	/* BS Carousel */
 	$('#header-carousel').carousel({
