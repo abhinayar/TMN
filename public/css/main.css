@@ -328,6 +328,7 @@ NAV
 		width: auto;
 		display: inline-block;
 		border-top: 0;
+		border-bottom: 0;
 		height: 100%;
 		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
