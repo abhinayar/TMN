@@ -30,7 +30,9 @@ $(document).ready(function(){
 
 		/* Hide Nav On Mobile Link Select */
 		$(".nav-list .nav-item.mobile a").on("click",function(){
-			if($(".mobile-nav-wrapper").hasClass("active")) {
+			if ($(this).attr("href") == "./Technology.html" || $(this).attr("href") == "../Technology.html") {
+				$(this).trigger('click');
+			} else if($(".mobile-nav-wrapper").hasClass("active")) {
 				$('.nav-list').slideToggle("150");
 				$(".mobile-nav-wrapper").removeClass("active");
 			}

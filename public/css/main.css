@@ -292,14 +292,10 @@ NAV
 	}
 
 	.nav-list .nav-item {
-		border-bottom: 1px solid #eee;
+		border-top: 1px solid #eee;
 		text-align: center;
 	}
-
-	.nav-list .nav-item:last-of-type {
-		border-bottom: none;
-	}
-
+	
 	.nav-list .nav-item:hover {
 		background: #eee;
 		cursor: pointer;
@@ -331,7 +327,7 @@ NAV
 	.nav-list, .nav-list .nav-item {
 		width: auto;
 		display: inline-block;
-		border-bottom: 0;
+		border-top: 0;
 		height: 100%;
 		-webkit-transition:0.2s all ease;
 		transition: 0.2s all ease;
@@ -389,7 +385,7 @@ NAV
 		display: block;
 		position: absolute;
 		left: -10px;
-		left: -8px;
+		left: -5px;
 		top: 78px;
 		z-index: 998;
 		background: #fff;
@@ -424,12 +420,15 @@ NAV
 	nav.full .nav-list .nav-item .dropdown {
 		top: 98px;
 		left: -12px;
-		left: -8px;
+		left: -4px;
 		-webkit-transition:all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	
 	.nav-list .nav-item .dropdown a {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
 		display: block;
 		width: 200px;
 		height: 60px;
