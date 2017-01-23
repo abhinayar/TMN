@@ -2335,14 +2335,16 @@ Technology
 	.overview-desc p {
 		line-height: 1.5em;
 		color: #555;
+		display: block;
 	}
 	
 	.overview-desc p a {
 		display: block;
 		margin-top: 7px;
-		font-weight: 700;
-		color: #077cab;
+		font-weight: 400;
+		color: #555;
 		text-decoration:  none;
+	} .overview-desc p a:nth-of-type(2) {
 		display: none;
 	}
 	
