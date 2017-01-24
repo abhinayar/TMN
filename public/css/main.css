@@ -557,7 +557,7 @@ Header Carousel
 		background-size: cover;
 		background-position: center -60px;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		overflow: scroll;
 	}
 	
@@ -692,6 +692,10 @@ Header Carousel
 @media (min-width: 768px) {
 	#header-carousel .item, #header-carousel .item .container {
 		height: 420px;
+	}
+	
+	#header-carousel .item {
+		background-attachment: fixed;
 	}
 	
 	#header-carousel .item .container {
@@ -2612,6 +2616,7 @@ Technology
 	
 	.error-logo .svg-wrapper {
 		max-width: 80%;
+		margin: 0 auto;
 	}
 	
 	.error-logo svg {

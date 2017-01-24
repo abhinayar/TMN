@@ -102,4 +102,9 @@ $(document).ready(function(){
 			window.location.href = new_url;
 		}
 	});
+	
+	/* Tech Scroll Down */
+	$(".technology .overview-wrapper").click(function(){
+		$(this).children("a").click();
+	});
 });	
