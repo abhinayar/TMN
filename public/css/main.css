@@ -975,7 +975,7 @@ Products
 @media (min-width: 0px) {
 	#platform {
 		background-position: center center;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-image: url(../img/index/platform/bg.jpg);
@@ -1119,6 +1119,10 @@ Products
 }
 
 @media (min-width: 768px) {
+	#platform {
+		background-attachment: fixed;
+	}
+	
 	.platform.title-wrapper {
 		padding-left: 30px;
 		overflow: hidden;
@@ -1880,7 +1884,7 @@ Footer
 		background-size: cover;
 		background-position: left center;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-image: url(../img/subpage/tech_bg.jpg);
 	}
 	
@@ -1996,6 +2000,7 @@ Footer
 
 	#subpage-tech {
 		padding-top: 60px;
+		background-attachment: fixed;
 	}
 
 	.subpage-prod-row .subpage-section-title, .subpage-tech-row .subpage-section-title {
