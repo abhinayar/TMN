@@ -554,7 +554,7 @@ Header Carousel
 
 	#header-carousel .item {
 		height: 240px;
-		background-size: cover;
+		background-size: auto;
 		background-position: center -60px;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
@@ -696,6 +696,7 @@ Header Carousel
 	
 	#header-carousel .item {
 		background-attachment: fixed;
+		background-size: cover;
 	}
 	
 	#header-carousel .item .container {
